@@ -1,0 +1,406 @@
+.wrapper {
+  margin: 20px auto;
+  max-width: 700px;
+  width: 500px;
+  background: linear-gradient(coral, rgb(252, 186, 156));
+  border: 2px solid;
+  padding: 5px;
+}
+
+.header {
+  margin: 50px auto;
+  width: 500px;
+  border: none;
+  padding: 5px;
+  justify-self: center;
+  align-items: center;
+  text-align: center;
+  font-size: 30px;
+}
+
+.box {
+  font-size: 20px;
+  width: 90%;
+  height: 20px;
+  padding-left: 10px;
+  padding: 5px;
+  border: none;
+  justify-self: center;
+  align-items: center;
+}
+
+.goButton {
+  font-size: 15px;
+  justify-self: center;
+  align-items: center;
+  text-align: center;
+}
+
+.wordBank {
+  border: none;
+  color: black;
+  font-size: 30px;
+  margin: auto;
+  padding: 5px;
+  text-align: center;
+  align-items: center;
+  justify-self: center;
+  overflow-wrap: break-word;
+}
+
+.lifePoints {
+  justify-self: center;
+  align-items: center;
+  text-align: center;
+  font-size: 20px;
+}
+
+.lifeBar {
+  border: solid;
+  justify-self: center;
+  margin: auto;
+  max-width: none;
+  max-height: 30px;
+  overflow-x: visible;
+  overflow-y: visible;
+  white-space: nowrap;
+  width: 70%;
+  font-size: 0px;
+}
+
+.life10 {
+  border: none;
+  background-color: green;
+  padding: 15px;
+  pointer-events: none;
+  width: 35px;
+}
+
+.life9 {
+  border: none;
+  background-color: green;
+  padding: 15px;
+  pointer-events: none;
+  width: 35px;
+}
+.life8 {
+  border: none;
+  background-color: green;
+  padding: 15px;
+  pointer-events: none;
+  width: 35px;
+}
+.life7 {
+  border: none;
+  background-color: green;
+  padding: 15px;
+  pointer-events: none;
+  width: 35px;
+}
+.life6 {
+  border: none;
+  background-color: green;
+  padding: 15px;
+  pointer-events: none;
+  width: 35px;
+}
+.life5 {
+  border: none;
+  background-color: green;
+  padding: 15px;
+  pointer-events: none;
+  width: 35px;
+}
+.life4 {
+  border: none;
+  background-color: green;
+  padding: 15px;
+  pointer-events: none;
+  width: 35px;
+}
+.life3 {
+  border: none;
+  background-color: green;
+  padding: 15px;
+  pointer-events: none;
+  width: 35px;
+}
+.life2 {
+  border: none;
+  background-color: green;
+  padding: 15px;
+  pointer-events: none;
+  width: 35px;
+}
+.life1 {
+  border: none;
+  background-color: green;
+  padding: 15px;
+  pointer-events: none;
+  width: 35px;
+}
+
+.buttons {
+  margin: auto;
+  width: 90%;
+  padding: 5px;
+  justify-self: center;
+  text-align: center;
+  align-items: center;
+}
+
+.letterA {
+  opacity: 70%;
+  background-color: transparent;
+  pointer-events: none;
+  border: none;
+  justify-self: center;
+  align-items: center;
+  font-size: 20px;
+}
+.letterB {
+  opacity: 70%;
+  background-color: transparent;
+  pointer-events: none;
+  border: none;
+  justify-self: center;
+  align-items: center;
+  font-size: 20px;
+}
+
+.letterC {
+  opacity: 70%;
+  background-color: transparent;
+  pointer-events: none;
+  border: none;
+  justify-self: center;
+  align-items: center;
+  font-size: 20px;
+}
+.letterD {
+  opacity: 70%;
+  background-color: transparent;
+  pointer-events: none;
+  border: none;
+  justify-self: center;
+  align-items: center;
+  font-size: 20px;
+}
+.letterE {
+  opacity: 70%;
+  background-color: transparent;
+  pointer-events: none;
+  border: none;
+  justify-self: center;
+  align-items: center;
+  font-size: 20px;
+}
+.letterF {
+  opacity: 70%;
+  background-color: transparent;
+  pointer-events: none;
+  border: none;
+  justify-self: center;
+  align-items: center;
+  font-size: 20px;
+}
+.letterG {
+  opacity: 70%;
+  background-color: transparent;
+  pointer-events: none;
+  border: none;
+  justify-self: center;
+  align-items: center;
+  font-size: 20px;
+}
+.letterH {
+  opacity: 70%;
+  background-color: transparent;
+  pointer-events: none;
+  border: none;
+  justify-self: center;
+  align-items: center;
+  font-size: 20px;
+}
+.letterI {
+  opacity: 70%;
+  background-color: transparent;
+  pointer-events: none;
+  border: none;
+  justify-self: center;
+  align-items: center;
+  font-size: 20px;
+}
+.letterJ {
+  opacity: 70%;
+  background-color: transparent;
+  pointer-events: none;
+  border: none;
+  justify-self: center;
+  align-items: center;
+  font-size: 20px;
+}
+.letterK {
+  opacity: 70%;
+  background-color: transparent;
+  pointer-events: none;
+  border: none;
+  justify-self: center;
+  align-items: center;
+  font-size: 20px;
+}
+.letterL {
+  opacity: 70%;
+  background-color: transparent;
+  pointer-events: none;
+  border: none;
+  justify-self: center;
+  align-items: center;
+  font-size: 20px;
+}
+.letterM {
+  opacity: 70%;
+  background-color: transparent;
+  pointer-events: none;
+  border: none;
+  justify-self: center;
+  align-items: center;
+  font-size: 20px;
+}
+.letterN {
+  opacity: 70%;
+  background-color: transparent;
+  pointer-events: none;
+  border: none;
+  justify-self: center;
+  align-items: center;
+  font-size: 20px;
+}
+.letterO {
+  opacity: 70%;
+  background-color: transparent;
+  pointer-events: none;
+  border: none;
+  justify-self: center;
+  align-items: center;
+  font-size: 20px;
+}
+.letterP {
+  opacity: 70%;
+  background-color: transparent;
+  pointer-events: none;
+  border: none;
+  justify-self: center;
+  align-items: center;
+  font-size: 20px;
+}
+.letterQ {
+  opacity: 70%;
+  background-color: transparent;
+  pointer-events: none;
+  border: none;
+  justify-self: center;
+  align-items: center;
+  font-size: 20px;
+}
+.letterR {
+  opacity: 70%;
+  background-color: transparent;
+  pointer-events: none;
+  border: none;
+  justify-self: center;
+  align-items: center;
+  font-size: 20px;
+}
+.letterS {
+  opacity: 70%;
+  background-color: transparent;
+  pointer-events: none;
+  border: none;
+  justify-self: center;
+  align-items: center;
+  font-size: 20px;
+}
+.letterT {
+  opacity: 70%;
+  background-color: transparent;
+  pointer-events: none;
+  border: none;
+  justify-self: center;
+  align-items: center;
+  font-size: 20px;
+}
+.letterU {
+  opacity: 70%;
+  background-color: transparent;
+  pointer-events: none;
+  border: none;
+  justify-self: center;
+  align-items: center;
+  font-size: 20px;
+}
+.letterV {
+  opacity: 70%;
+  background-color: transparent;
+  pointer-events: none;
+  border: none;
+  justify-self: center;
+  align-items: center;
+  font-size: 20px;
+}
+.letterW {
+  opacity: 70%;
+  background-color: transparent;
+  pointer-events: none;
+  border: none;
+  justify-self: center;
+  align-items: center;
+  font-size: 20px;
+}
+.letterX {
+  opacity: 70%;
+  background-color: transparent;
+  pointer-events: none;
+  border: none;
+  justify-self: center;
+  align-items: center;
+  font-size: 20px;
+}
+.letterY {
+  opacity: 70%;
+  background-color: transparent;
+  pointer-events: none;
+  border: none;
+  justify-self: center;
+  align-items: center;
+  font-size: 20px;
+}
+.letterZ {
+  opacity: 70%;
+  background-color: transparent;
+  pointer-events: none;
+  border: none;
+  justify-self: center;
+  align-items: center;
+  font-size: 20px;
+}
+
+.letterOff {
+  opacity: 70%;
+  background-color: transparent;
+  text-decoration: line-through;
+  pointer-events: none;
+  border: none;
+}
+
+.letterActive {
+  justify-self: center;
+  align-items: center;
+  font-size: 20px;
+}
+
+.fadeaway {
+  opacity: 0;
+  transition: opacity 1s ease-out;
+  background-color: red;
+}
