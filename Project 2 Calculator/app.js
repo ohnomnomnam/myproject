@@ -26,7 +26,6 @@ function selector(value) {
     firstValue += value;
     displayValue = parseFloat(firstValue);
     display.textContent = displayValue;
-    console.log(firstValue);
   }
   if (value == `c`) {
     firstValue = 0;
@@ -45,67 +44,111 @@ function selector(value) {
   if (value == `-`) {
     addButtonFunction();
     buttonSubtract.classList.add("buttonOff");
-    history = displayValue + ` - `;
-    historyBox.textContent = history;
-    secondValue = parseFloat(firstValue);
-    displayValue = 0;
-    firstValue = 0;
-    subtraction = 1;
-    multiply = 0;
-    divide = 0;
-    addition = 0;
-    display.textContent = displayValue;
+    if (subtraction == 0 && multiply == 0 && divide == 0 && addition == 0) {
+      history = displayValue + ` - `;
+      historyBox.textContent = history;
+      secondValue = parseFloat(firstValue);
+      displayValue = 0;
+      firstValue = 0;
+      subtraction = 1;
+      multiply = 0;
+      divide = 0;
+      addition = 0;
+      display.textContent = displayValue;
+    } else if (addition == 1 || multiply == 1 || divide == 1) {
+      history = secondValue + ` - `;
+      historyBox.textContent = history;
+      displayValue = 0;
+      firstValue = 0;
+      subtraction = 1;
+      multiply = 0;
+      divide = 0;
+      addition = 0;
+    }
   }
   if (value == `+`) {
     addButtonFunction();
     buttonAdd.classList.add("buttonOff");
-    history = displayValue + ` + `;
-    historyBox.textContent = history;
-    secondValue = parseFloat(firstValue);
-    displayValue = 0;
-    firstValue = 0;
-    subtraction = 0;
-    multiply = 0;
-    divide = 0;
-    addition = 1;
-    display.textContent = displayValue;
+    if (subtraction == 0 && multiply == 0 && divide == 0 && addition == 0) {
+      history = displayValue + ` + `;
+      historyBox.textContent = history;
+      secondValue = parseFloat(firstValue);
+      displayValue = 0;
+      firstValue = 0;
+      subtraction = 0;
+      multiply = 0;
+      divide = 0;
+      addition = 1;
+      display.textContent = displayValue;
+    } else if (subtraction == 1 || multiply == 1 || divide == 1) {
+      history = secondValue + ` + `;
+      historyBox.textContent = history;
+      displayValue = 0;
+      firstValue = 0;
+      subtraction = 0;
+      multiply = 0;
+      divide = 0;
+      addition = 1;
+    }
   }
   if (value == `/`) {
     addButtonFunction();
     buttonDivide.classList.add("buttonOff");
-    history = displayValue + ` \xF7 `;
-    historyBox.textContent = history;
-    secondValue = parseFloat(firstValue);
-    displayValue = 0;
-    firstValue = 0;
-    subtraction = 0;
-    multiply = 0;
-    divide = 1;
-    addition = 0;
-    display.textContent = displayValue;
-    secondValue += firstValue;
-    firstValue = 0;
+    if (subtraction == 0 && multiply == 0 && divide == 0 && addition == 0) {
+      history = displayValue + ` \xF7 `;
+      historyBox.textContent = history;
+      secondValue = parseFloat(firstValue);
+      displayValue = 0;
+      firstValue = 0;
+      subtraction = 0;
+      multiply = 0;
+      divide = 1;
+      addition = 0;
+      display.textContent = displayValue;
+      secondValue += firstValue;
+      firstValue = 0;
+    } else if (subtraction == 1 || multiply == 1 || addition == 1) {
+      history = secondValue + ` \xF7 `;
+      historyBox.textContent = history;
+      displayValue = 0;
+      firstValue = 0;
+      subtraction = 0;
+      multiply = 0;
+      divide = 1;
+      addition = 0;
+    }
   }
   if (value == `x`) {
     addButtonFunction();
     buttonMultiply.classList.add("buttonOff");
-    history = displayValue + ` * `;
-    historyBox.textContent = history;
-    secondValue = parseFloat(firstValue);
-    displayValue = 0;
-    firstValue = 0;
-    subtraction = 0;
-    multiply = 1;
-    divide = 0;
-    addition = 0;
-    display.textContent = displayValue;
-    secondValue += firstValue;
-    firstValue = 0;
+    if (subtraction == 0 && multiply == 0 && divide == 0 && addition == 0) {
+      history = displayValue + ` * `;
+      historyBox.textContent = history;
+      secondValue = parseFloat(firstValue);
+      displayValue = 0;
+      firstValue = 0;
+      subtraction = 0;
+      multiply = 1;
+      divide = 0;
+      addition = 0;
+      display.textContent = displayValue;
+      secondValue += firstValue;
+      firstValue = 0;
+    } else if (subtraction == 1 || divide == 1 || addition == 1) {
+      history = secondValue + ` * `;
+      historyBox.textContent = history;
+      displayValue = 0;
+      firstValue = 0;
+      subtraction = 0;
+      multiply = 1;
+      divide = 0;
+      addition = 0;
+    }
   }
   if (value == `=`) {
     if (addition === 1) {
-      history = history + firstValue + ` = `;
       firstValue = parseFloat(firstValue);
+      history = history + firstValue + ` = `;
       firstValue += secondValue;
       displayValue = firstValue;
       display.textContent = displayValue;
@@ -117,8 +160,8 @@ function selector(value) {
       addButtonFunction();
     }
     if (subtraction === 1) {
-      history = history + firstValue + ` = `;
       firstValue = parseFloat(firstValue);
+      history = history + firstValue + ` = `;
       firstValue = secondValue - firstValue;
       displayValue = firstValue;
       display.textContent = displayValue;
@@ -130,8 +173,8 @@ function selector(value) {
       addButtonFunction();
     }
     if (multiply === 1) {
-      history = history + firstValue + ` = `;
       firstValue = parseFloat(firstValue);
+      history = history + firstValue + ` = `;
       firstValue *= secondValue;
       displayValue = firstValue;
       display.textContent = displayValue;
@@ -143,38 +186,15 @@ function selector(value) {
       addButtonFunction();
     }
     if (divide === 1) {
-      if (firstValue == 0) {
-        firstValue = secondValue;
-        history = history + firstValue + ` = `;
-        firstValue = secondValue / firstValue;
-        displayValue = firstValue;
-        display.textContent = displayValue;
-        history += displayValue;
-        historyBox.textContent = history;
-        secondValue = 0;
-        divide = 0;
-        console.log(displayValue);
-        addButtonFunction();
-      } else {
-        history = history + firstValue + ` = `;
-        firstValue = parseFloat(firstValue);
-        firstValue = secondValue / firstValue;
-        displayValue = firstValue;
-        display.textContent = displayValue;
-        history += displayValue;
-        historyBox.textContent = history;
-        secondValue = 0;
-        divide = 0;
-        console.log(displayValue);
-        addButtonFunction();
-      }
-    } else {
+      firstValue = parseFloat(firstValue);
+      history = history + firstValue + ` = `;
+      firstValue = secondValue / firstValue;
       displayValue = firstValue;
       display.textContent = displayValue;
-      history = displayValue;
+      history += displayValue;
       historyBox.textContent = history;
       secondValue = 0;
-      console.log(displayValue);
+      divide = 0;
       addButtonFunction();
     }
   }
