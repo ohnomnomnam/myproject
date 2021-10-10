@@ -1,0 +1,37 @@
+* {
+  box-sizing: border-box;
+}
+
+.background {
+  background-image: linear-gradient(to right, rgb(128, 62, 0), orange);
+}
+
+.title {
+  font-size: 50px;
+  justify-self: center;
+  align-items: center;
+  text-align: center;
+}
+
+.row.button {
+  justify-self: center;
+  align-items: center;
+  text-align: center;
+}
+
+.row.picture {
+  padding-top: 5px;
+  display: flex;
+  height: 50%;
+  align-items: center;
+  justify-content: center;
+}
+
+.dogpicture {
+  border: solid;
+  background-color: turquoise;
+  object-fit: contain;
+  max-width: 90%;
+  max-height: auto;
+  height: auto;
+}

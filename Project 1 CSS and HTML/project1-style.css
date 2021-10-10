@@ -1,0 +1,101 @@
+* {
+  box-sizing: border-box;
+}
+
+.title {
+  font-size: 50px;
+  justify-self: center;
+  align-items: center;
+  text-align: center;
+}
+
+.sub {
+  font-size: 30px;
+  justify-self: center;
+  align-items: center;
+  text-align: center;
+}
+
+.first.row {
+  display: flex;
+  background-color: teal;
+  align-items: stretch;
+}
+
+.box {
+  display: flex;
+  border: solid 1px;
+  background-color: transparent;
+  flex-direction: column;
+}
+
+.box.one {
+  width: 25%;
+  padding: 5px;
+}
+
+.box.two {
+  background-color: thistle;
+  width: 50%;
+  align-items: center;
+  padding: 5px;
+}
+
+.box.three {
+  width: 25%;
+  padding: 5px;
+}
+
+.second.row {
+  display: flex;
+  background-color: tomato;
+  align-items: stretch;
+}
+
+.box.four {
+  width: 25%;
+  padding: 5px;
+}
+
+.box.five {
+  width: 75%;
+  align-items: stretch;
+  flex-direction: column;
+}
+
+.innerBox {
+  display: flex;
+  font-size: 25px;
+  flex: 1;
+  padding-left: 10px;
+  align-items: center;
+}
+
+.innerBox.one {
+  background-color: wheat;
+}
+
+.innerBox.two {
+  background-color: violet;
+}
+
+.innerBox.three {
+  background-color: turquoise;
+}
+
+.innerBox.four {
+  background-color: yellowgreen;
+}
+
+.innerBox.five {
+  background-color: green;
+}
+
+.luxPicture {
+  border: solid;
+  background-color: turquoise;
+  object-fit: contain;
+  max-width: 90%;
+  max-height: auto;
+  height: auto;
+}

@@ -1,0 +1,197 @@
+* {
+  box-sizing: border-box;
+}
+
+.title {
+  font-size: 50px;
+  justify-self: center;
+  align-items: center;
+  text-align: center;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.history {
+  display: flex;
+  width: 500px;
+  border-top: solid 2px;
+  border-left: solid 2px;
+  border-right: solid 2px;
+  padding: 5px;
+  font-size: 30px;
+  justify-content: right;
+  background-image: linear-gradient(to right, purple, thistle);
+}
+
+.display {
+  display: flex;
+  width: 500px;
+  border: solid 2px;
+  border-bottom: 1px;
+  padding: 5px;
+  font-size: 30px;
+  justify-content: right;
+  background-image: linear-gradient(to right, purple, thistle);
+}
+
+.buttonsection {
+  width: 500px;
+  border: solid 2px;
+  height: auto;
+  align-content: stretch;
+}
+
+.row-1 {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+}
+
+.row-2 {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+}
+.row-3 {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+}
+.row-4 {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+}
+.row-5 {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+}
+
+.button {
+  padding: 10px;
+  margin: 1px;
+  border: none;
+  background-color: violet;
+}
+
+.button.clear {
+  font-size: 20px;
+  width: 51%;
+  height: auto;
+  background-color: thistle;
+}
+
+.button.backspace {
+  font-size: 20px;
+  width: 25%;
+  height: auto;
+  background-color: thistle;
+}
+
+.button.divide {
+  font-size: 20px;
+  width: 25%;
+  height: auto;
+  background-color: thistle;
+}
+
+.button.seven {
+  font-size: 20px;
+  width: 25%;
+  height: auto;
+}
+.button.eight {
+  font-size: 20px;
+  width: 25%;
+  height: auto;
+}
+.button.nine {
+  font-size: 20px;
+  width: 25%;
+  height: auto;
+}
+.button.multiply {
+  font-size: 20px;
+  width: 25%;
+  height: auto;
+  background-color: thistle;
+}
+.button.four {
+  font-size: 20px;
+  width: 25%;
+  height: auto;
+}
+
+.button.five {
+  font-size: 20px;
+  width: 25%;
+  height: auto;
+}
+
+.button.six {
+  font-size: 20px;
+  width: 25%;
+  height: auto;
+}
+
+.button.subtract {
+  font-size: 20px;
+  width: 25%;
+  height: auto;
+  background-color: thistle;
+}
+.button.one {
+  font-size: 20px;
+  width: 25%;
+  height: auto;
+}
+.button.two {
+  font-size: 20px;
+  width: 25%;
+  height: auto;
+}
+.button.three {
+  font-size: 20px;
+  width: 25%;
+  height: auto;
+}
+.button.add {
+  font-size: 20px;
+  width: 25%;
+  height: auto;
+  background-color: thistle;
+}
+.button.zero {
+  font-size: 20px;
+  width: 50%;
+  height: auto;
+}
+
+.button.decimal {
+  font-size: 20px;
+  width: 25%;
+  height: auto;
+}
+
+.button.equal {
+  font-size: 20px;
+  width: 25%;
+  height: auto;
+  background-color: thistle;
+}
+
+.button:hover {
+  background-color: grey;
+  cursor: pointer;
+}
+
+.buttonOff {
+  opacity: 70%;
+  background-color: none;
+  pointer-events: none;
+}
